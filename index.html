@@ -10,7 +10,27 @@
 <style>
 
 
+.gifting-section{
+    background-image: url('https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+    position: relative;
+}
 
+.gifting-section::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.85);
+}
+
+.gifting-section .section-title,
+.gifting-section .categories-box{
+    position: relative;
+    z-index: 1;
+}
 
   
 .logo{
@@ -557,7 +577,8 @@ For Bulk Orders Contact: +91 8820936173/9830676011
 <p>Premium Gifts For Every Occasion</p>
 </div>
 </section>
-<section id="categories" class="categories-section">
+<section class="gifting-section">
+
 
 <h2 class="section-title">Gifting Categories</h2>
 
