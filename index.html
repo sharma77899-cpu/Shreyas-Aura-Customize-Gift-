@@ -8,13 +8,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
- .hero {
+ .hero{
+    background: url('file_00000000d35c71f5b4671cc88b23b0f8.png') center center/cover no-repeat;
     height: 100vh;
-    background: url('file_00000000d35c71f5b4671cc88b23b0f8.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
- }   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero div{
+    position: relative;
+    z-index: 1;
+}
+
+
+  
 .logo{
     font-size: 28px;
     font-weight: 900;
@@ -74,7 +92,7 @@ position:relative;
 display:flex;
 gap:20px;
 width:max-content;
-animation:scrollProducts 30s linear infinite;
+animation:scrollProducts 10s linear infinite;
 }
 
 .slide-track:hover{
