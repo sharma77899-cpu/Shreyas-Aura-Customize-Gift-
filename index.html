@@ -8,9 +8,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 .hero{
-    background-image: url('https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=1600&q=80');
+    background-image: url('images/david-everett-strickler-9QndjmrMeBE-unsplash.jpg');
+}
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,6 +21,18 @@
     text-align: center;
     color: white;
     position: relative;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero div{
+    position: relative;
+    z-index: 1;
 }
 .gifting-section{
     background-image: url('https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=1600&q=80');
